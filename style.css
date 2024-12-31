@@ -23,12 +23,9 @@ header {
     background-color: rgb(33, 31, 31);
     color: rgb(232, 226, 219);
     border-radius: 25px;
-    width: 800px;
     padding: 20px;
-    margin: 1px;
     opacity: 0.9; /* Apply transparency */
-    margin-top: 50px; /* Lower by 20px */
-    margin-right: 1000px;
+    margin-right: 1px;
 }
 
 h1 {
