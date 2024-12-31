@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html>
+<head> 
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta charset="UTF-8">
+    <title>Puffington Post</title>
+    <link href="https://fonts.googleapis.com/css2?family=JetBrains+Mono:wght@400;700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.4/css/all.min.css">
+    <script>
+        window.onload = function() {
+            var ageConfirmed = confirm("You must 18 years old or older!");
+            if (!ageConfirmed) {
+                window.location.href = "https://www.google.com";
+            }
+        };
+    </script>
+    <script src="index.js"></script>
+</head>
+<body>
+    <div class="sidebar">
+        <a href="index.html"><i class="fas fa-home"></i></a>
+        <a href="more.html"><i class="fas fa-ellipsis-h"></i></a>
+        <a href="about.html"><i class="fas fa-info-circle"></i></a>
+        <a href="merch.html"><i class="fas fa-shopping-cart"></i></a> <!-- New Merch link -->
+    </div>
+    <div class="content">
+        <header>
+            <img src="./images/logo.jpg" alt="Puffington Post Logo" width="300" class="logo" title="Puffington Post Logo">
+        </header>
+        <main>
+            <img src="./images/Anime-.png" alt="Anime" class="anime-img" width="1800" title="Anime">
+            <section>
+                <h1 class="Puffington Maintitle">Puffington Post</h1>
+                <h2 class="puffington-post-title">Elephants 41 by Elephants Growth</h2>
+                <div class="image-row">
+                    <img src="./images/Elephant.jpg" alt="Elephants41" class="elephants-img" width="600" title="Elephants41">
+                    <p class="puffington-post-intro">
+                        I've been able to get my hands on this strain only 3 times last year and  yup it was very much worth it.
+                        We're not gonna talk about the price lol but being from NYC I really can't complain, its not easy finding this 
+                        strain out here, but I can say this is the best weed I've ever smoked.
+                        <br><br>
+                        Elephant 41 has become a sensation in the cannabis community, gaining widespread attention after a viral tweet highlighted its unique qualities. 
+                        While its exact genetics are unconfirmed, many believe it stems from Growth’s LCG cut, 
+                        which may explain its standout attributes and premium smoking experience. 
+                        The strain’s aroma is described as a mesmerizing mix of musky, funky, tropical pineapple, and sweet cherry notes, both delicate and vibrant. 
+                        Users report a creamy smoothness on the inhale with tropical, musky undertones, while the exhale offers a rich, funky flavor with lasting muskiness.
+                        <br><br>
+                        Praised for its unparalleled smoothness, Elephants 41 is often compared to Mount Burnin’s Silky series. 
+                        The strain is said to deliver a clean and balanced high, beginning with a swift cerebral uplift immediately after exhaling, 
+                        followed by a relaxing body high that develops shortly after. 
+                        This harmonious blend of effects makes it ideal for both casual users and experienced cannabis enthusiasts, 
+                        offering an enjoyable experience suitable for any time of day. 
+                        With its captivating aroma, luxurious texture, and versatile effects, 
+                        Elephants 41 is quickly establishing itself as a standout in the cannabis world... TheCreator187
+                    </p>
+                </div>
+            </section>
+            <section>
+                <br>
+                <div class="post-container">
+                    <div>
+                        <h2><a href="news/breaking-news.html">Breaking News</a></h2>
+                        <p>There has been a recent outbreak of a new virus in the city. Stay safe and stay indoors.</p>
+                    </div>
+                </div>
+                <div class="post-container">
+                    <div>
+                        <h2><a href="news/entertainment-news.html">Entertainment News</a></h2>
+                        <p>There will be a new movie coming out next week. Make sure to check it out in theaters.</p>
+                    </div>
+                    <div>
+                        <h2><a href="news/sports-update.html">Sports Update</a></h2>
+                        <p>The local team has won the championship. Make sure to celebrate with them at the stadium.</p>
+                    </div>
+                </div>
+            </section>
+            <section>
+                <h1>Digital Store</h1>
+                <p class="store-intro">Here you will find digital goods of all sorts for sale.</p>
+                <br>
+                <div class="image-container">
+                    <div>
+                        <img id="crypto-bull" src="./images/pic1.jpg" alt="Crypto Bull NFT" width="200" title="Crypto Bull">
+                        <p>Crypto Bull NFT</p>
+                        <a href="https://etherscan.io/nft/0xf6e2c197e96b63b982ca639262cdf0a5f296d528/8009">
+                            <button class="more-info">More Info</button>
+                        </a>
+                    </div>
+                    <div>
+                        <img id="cyber-monkey" src="./images/pic2.jpg" alt="Cyber Monkey NFT" width="200" title="Cyber Monkey">
+                        <p>Cyber Monkey NFT</p>
+                        <a href="https://etherscan.io/nft/0xf6e2c197e96b63b982ca639262cdf0a5f296d528/8009">
+                            <button class="more-info">More Info</button>
+                        </a>
+                    </div>
+                </div>
+            </section>
+        </main>
+        <footer> 
+            <p>&copy; 2023 Puffington Post. All rights reserved.</p>
+        </footer>
+    </div>
+    <div class="chatbot">
+        <div class="chatbot-header">
+            <h3>Chatbot</h3>
+        </div>
+        <div class="chatbot-body">
+            <p>What is your favorite strain?</p>
+            <input type="text" id="userInput" placeholder="Type your answer here...">
+            <button onclick="submitAnswer()">Submit</button>
+        </div>
+    </div>
+</body>
+</html>

@@ -1,0 +1,286 @@
+html, body {
+    background-color: rgb(42, 43, 44);
+}
+
+body {
+    font-family: 'JetBrains Mono', monospace;
+    color: bisque; /* Changed text color to bisque */
+    opacity: 0.9; /* Apply transparency */
+    box-sizing: border-box;
+}
+
+header {
+    display: flex;
+    justify-content: center; /* Center the header layout */
+    align-items: center;
+    padding: 10px 20px;
+    opacity: 0.95; /* Apply transparency */
+    border-radius: 20px;
+    background: -moz-linear-gradient(90deg, rgba(42, 43, 44) 0%, rgba(12, 12, 12, 0.7) 100%); /* Firefox */
+}
+
+.puffington-post-intro {
+    background-color: rgb(33, 31, 31);
+    color: rgb(232, 226, 219);
+    border-radius: 25px;
+    width: 800px;
+    padding: 20px;
+    margin: 1px;
+    opacity: 0.9; /* Apply transparency */
+    margin-top: 50px; /* Lower by 20px */
+    margin-right: 1000px;
+}
+
+h1 {
+    color: rgb(30, 23, 16); /* h1 Puffington Post */
+    text-align: left;
+}
+
+.about-intro {
+    color: bisque; /* Store intro text color */
+}
+
+.more-info {
+    color: white;
+    border-radius: 5px;
+    background-color: #28a745;
+    margin-left: 73px; /* More info button text */
+    margin-top: 10px;
+    padding: 5px 10px;
+    border: none;
+    cursor: pointer;
+}
+
+.more-info:hover {
+    background-color: #218838; /* More info button color */
+}
+
+img {
+    margin: 10px;
+    border-radius: 20%; 
+}
+
+.image-container {
+    display: flex;
+    flex-direction: row; /* Changed from column to row */
+    align-items: center;
+    gap: 20px;
+}
+
+.image-container p {
+    margin: 0 10px;
+    text-align: center;
+}
+
+.image-container div {
+    text-align: center;
+}
+
+a {
+    color: bisque; /* Changed link color to bisque */
+}
+
+.centered-container {
+    text-align: center;
+    margin: auto; /* Reset margin-top */
+}
+
+.logo {
+    display: block;
+    margin: 20px auto;
+    border-radius: 60%;
+    max-width: 100%;
+    height: auto;
+    border: bisque 5px solid;
+    margin-left: 850px;
+    background-color: white;
+}
+
+.anime-img {
+    width: 100%;
+    height: auto;
+    border-radius: 15px;
+    border: bisque 3px solid;
+    margin-right: 150px;
+    margin: 0px;
+    padding: 0px;
+    left: 200px;
+    display: block;
+    opacity: calc(0.9); /* Apply transparency */
+}
+
+main {
+    padding: 20px;
+}
+
+.post-container {
+    margin-bottom: 20px;
+}
+
+footer {
+    text-align: center;
+    padding: 10px;
+    background-color: #252627;
+    width: 100%;
+    border-radius: 20px;
+}
+
+.sidebar {
+    height: 100%;
+    width: 60px; /* Make the sidebar thinner */
+    position: fixed;
+    top: 0;
+    left: 0;
+    background-color: #333;
+    padding-top: 20px;
+}
+
+.sidebar a {
+    padding: 10px 0;
+    text-decoration: none;
+    font-size: 18px;
+    color: bisque;
+    display: block;
+    text-align: center;
+}
+
+.sidebar a:hover {
+    background-color: #575757;
+}
+
+.sidebar i {
+    font-size: 24px; /* Increase icon size */
+}
+
+.content {
+    margin-left: 80px; /* Move content to the right */
+}
+
+.image-row {
+    display: flex;
+    justify-content: left;
+    align-items: center;
+}
+
+.image-row img {
+    margin: 0 10px;
+}
+
+.elephants-img {
+    border-radius: 20px;
+    float: left;
+}
+
+/* Remove navbar styles */
+.navbar {
+    display: none;
+}
+
+.back-button {
+    margin-top: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.back-button:hover {
+    background-color: #218838;
+}
+
+.chatbot {
+    position: fixed;
+    bottom: 20px;
+    right: 20px;
+    width: 300px;
+    background-color: #333;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
+    color: bisque;
+    font-family: 'JetBrains Mono', monospace;
+}
+
+.chatbot-header {
+    background-color: #444;
+    padding: 10px;
+    border-top-left-radius: 10px;
+    border-top-right-radius: 10px;
+    text-align: center;
+}
+
+.chatbot-body {
+    padding: 20px;
+}
+
+.chatbot-body p {
+    margin: 0 0 10px;
+}
+
+.chatbot-body input {
+    width: calc(100% - 20px);
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    margin-bottom: 10px;
+}
+
+.chatbot-body button {
+    width: 100%;
+    padding: 10px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
+
+.chatbot-body button:hover {
+    background-color: #218838;
+}
+
+@media screen and (max-width: 600px) {
+    .sidebar {
+        width: 100px; /* Make the sidebar wider */
+    }
+
+    .content {
+        margin-left: 120px; /* Move content to the right */
+    }
+
+    .sidebar i {
+        font-size: 30px; /* Increase icon size */
+    }
+
+    .logo {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .puffington-post-intro {
+        width: 100%;
+        margin-right: 0;
+    }
+
+    .anime-img {
+        width: 100%;
+        margin-right: 0;
+        left: 0;
+    }
+
+    .image-row {
+        flex-direction: column;
+        align-items: flex-start;
+    }
+
+    .image-row img {
+        width: 100%;
+        margin: 10px 0;
+    }
+
+    .back-button {
+        width: 100%;
+        margin-top: 10px;
+    }
+}
