@@ -180,81 +180,7 @@ footer {
     background-color: #218838;
 }
 
-.chatbot {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 300px;
-    background-color: #333;
-    border-radius: 10px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, 0.5);
-    color: bisque;
-    font-family: 'JetBrains Mono', monospace;
-    background-color: #333;
-    color: #fff;
-    border: 1px solid #444;
-    border-radius: 5px;
-    padding: 10px;
-    width: 300px;
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-}
-
-.chatbot-header {
-    background-color: #444;
-    padding: 10px;
-    border-top-left-radius: 10px;
-    border-top-right-radius: 10px;
-    text-align: center;
-    background-color: #444;
-    padding: 5px;
-    border-bottom: 1px solid #555;
-}
-
-.chatbot-body {
-    padding: 20px;
-    padding: 10px;
-}
-
-.chatbot-body p {
-    margin: 0 0 10px;
-}
-
-.chatbot-body input {
-    width: calc(100% - 20px);
-    padding: 10px;
-    border: none;
-    border-radius: 5px;
-    margin-bottom: 10px;
-    background-color: #555;
-    color: #fff;
-    border: 1px solid #666;
-    border-radius: 3px;
-    padding: 5px;
-    width: calc(100% - 12px);
-}
-
-.chatbot-body button {
-    width: 100%;
-    padding: 10px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-    background-color: #666;
-    color: #fff;
-    border: none;
-    border-radius: 3px;
-    padding: 5px 10px;
-    cursor: pointer;
-}
-
-.chatbot-body button:hover {
-    background-color: #218838;
-    background-color: #777;
-}
+/* Removed chatbot CSS */
 
 @media screen and (max-width: 600px) {
     body {
@@ -314,16 +240,7 @@ footer {
         margin-left: 60px;
     }
 
-    .chatbot {
-        width: 100%;
-        bottom: 0;
-        right: 0;
-        border-radius: 0;
-    }
-
-    .chatbot-header {
-        border-radius: 0;
-    }
+    /* Removed chatbot CSS */
 
     img {
         width: 100%;
@@ -394,15 +311,6 @@ footer {
         margin-left: 80px;
     }
 
-    .chatbot {
-        width: 300px;
-        bottom: 20px;
-        right: 20px;
-        border-radius: 10px;
-    }
-
-    .chatbot-header {
-        border-radius: 10px;
-    }
+    /* Removed chatbot CSS */
 }
 
