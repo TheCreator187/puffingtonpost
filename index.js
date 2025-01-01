@@ -13,7 +13,13 @@ window.onload = function() {
 };
 
 function submitAnswer() {
-    var userInput = document.getElementById('userInput').value;
-    alert("Your favorite strain is: " + userInput);
+    const userInput = document.getElementById('userInput').value;
+    if (userInput) {
+        alert(`Your answer: ${userInput}`);
+        document.querySelector('.chatbot').style.display = 'none';
+        
+        // Record the input from the chatbot
+        console.log(`Recorded answer: ${userInput}`);
+    }
 }
 
