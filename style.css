@@ -4,19 +4,20 @@ html, body {
 
 body {
     font-family: 'JetBrains Mono', monospace;
-    color: bisque; /* Changed text color to bisque */
-    opacity: 0.9; /* Apply transparency */
+    color: bisque;
+    opacity: 0.9;
     box-sizing: border-box;
 }
 
 header {
     display: flex;
-    justify-content: center; /* Center the header layout */
+    justify-content: center;
     align-items: center;
     padding: 10px 20px;
-    opacity: 0.95; /* Apply transparency */
+    opacity: 0.95;
     border-radius: 20px;
-    background: -moz-linear-gradient(90deg, rgba(42, 43, 44) 0%, rgba(12, 12, 12, 0.7) 100%); /* Firefox */
+    background: -moz-linear-gradient(90deg, rgba(42, 43, 44) 0%, rgba(12, 12, 12, 0.7) 100%);
+    position: relative;
 }
 
 .puffington-post-intro {
@@ -24,24 +25,24 @@ header {
     color: rgb(232, 226, 219);
     border-radius: 25px;
     padding: 20px;
-    opacity: 0.9; /* Apply transparency */
+    opacity: 0.9;
     margin-right: 1px;
 }
 
 h1 {
-    color: rgb(30, 23, 16); /* h1 Puffington Post */
+    color: rgb(30, 23, 16);
     text-align: left;
 }
 
 .about-intro {
-    color: bisque; /* Store intro text color */
+    color: bisque;
 }
 
 .more-info {
     color: white;
     border-radius: 5px;
     background-color: #28a745;
-    margin-left: 73px; /* More info button text */
+    margin-left: 73px;
     margin-top: 10px;
     padding: 5px 10px;
     border: none;
@@ -49,17 +50,19 @@ h1 {
 }
 
 .more-info:hover {
-    background-color: #218838; /* More info button color */
+    background-color: #218838;
 }
 
 img {
     margin: 10px;
-    border-radius: 20%; 
+    border-radius: 20%;
+    max-width: 100%;
+    height: auto;
 }
 
 .image-container {
     display: flex;
-    flex-direction: row; /* Changed from column to row */
+    flex-direction: row;
     align-items: center;
     gap: 20px;
 }
@@ -74,23 +77,12 @@ img {
 }
 
 a {
-    color: bisque; /* Changed link color to bisque */
+    color: bisque;
 }
 
 .centered-container {
     text-align: center;
-    margin: auto; /* Reset margin-top */
-}
-
-.logo {
-    display: block;
-    margin: 20px auto;
-    border-radius: 60%;
-    max-width: 100%;
-    height: auto;
-    border: bisque 5px solid;
-    margin-left: 850px;
-    background-color: white;
+    margin: auto;
 }
 
 .anime-img {
@@ -99,11 +91,12 @@ a {
     border-radius: 15px;
     border: bisque 3px solid;
     margin-right: 150px;
-    margin: 0px;
-    padding: 0px;
+    margin: 0;
+    padding: 0;
     left: 200px;
     display: block;
-    opacity: calc(0.9); /* Apply transparency */
+    opacity: calc(0.9);
+    max-width: 100%;
 }
 
 main {
@@ -124,7 +117,7 @@ footer {
 
 .sidebar {
     height: 100%;
-    width: 60px; /* Make the sidebar thinner */
+    width: 60px;
     position: fixed;
     top: 0;
     left: 0;
@@ -146,11 +139,11 @@ footer {
 }
 
 .sidebar i {
-    font-size: 24px; /* Increase icon size */
+    font-size: 24px;
 }
 
 .content {
-    margin-left: 80px; /* Move content to the right */
+    margin-left: 80px;
 }
 
 .image-row {
@@ -161,6 +154,7 @@ footer {
 
 .image-row img {
     margin: 0 10px;
+    max-width: 100%;
 }
 
 .elephants-img {
@@ -168,7 +162,6 @@ footer {
     float: left;
 }
 
-/* Remove navbar styles */
 .navbar {
     display: none;
 }
@@ -238,33 +231,37 @@ footer {
 }
 
 @media screen and (max-width: 600px) {
-    .sidebar {
-        width: 100px; /* Make the sidebar wider */
+    body {
+        font-size: 14px;
     }
 
-    .content {
-        margin-left: 120px; /* Move content to the right */
-    }
-
-    .sidebar i {
-        font-size: 30px; /* Increase icon size */
-    }
-
-    .logo {
-        margin-left: 0;
-        width: 100%;
+    header {
+        flex-direction: column;
+        padding: 10px;
     }
 
     .puffington-post-intro {
-        width: 100%;
-        margin-right: 0;
-        font-size: 16px; /* Increase font size for readability */
+        font-size: 12px;
+        padding: 10px;
+    }
+
+    .more-info {
+        font-size: 12px;
+        margin-left: 0;
+        margin-top: 5px;
+        padding: 5px;
+    }
+
+    .image-container {
+        flex-direction: column;
+        gap: 10px;
     }
 
     .anime-img {
         width: 100%;
         margin-right: 0;
         left: 0;
+        max-width: 100%;
     }
 
     .image-row {
@@ -275,6 +272,7 @@ footer {
     .image-row img {
         width: 100%;
         margin: 10px 0;
+        max-width: 100%;
     }
 
     .back-button {
@@ -282,11 +280,103 @@ footer {
         margin-top: 10px;
     }
 
-    h1, h2, p {
-        font-size: 16px; /* Increase font size for readability */
+    .sidebar {
+        width: 50px;
+    }
+
+    .content {
+        margin-left: 60px;
+    }
+
+    .chatbot {
+        width: 100%;
+        bottom: 0;
+        right: 0;
+        border-radius: 0;
+    }
+
+    .chatbot-header {
+        border-radius: 0;
+    }
+
+    img {
+        width: 100%;
+        height: auto;
+    }
+
+    p, h1, h2, h3, h4, h5, h6 {
+        font-size: 1em;
+        line-height: 1.5em;
+    }
+}
+
+@media screen and (min-width: 601px) {
+    body {
+        font-size: 16px;
+    }
+
+    header {
+        flex-direction: row;
+        padding: 20px;
+    }
+
+    .puffington-post-intro {
+        font-size: 14px;
+        padding: 20px;
     }
 
     .more-info {
-        font-size: 16px; /* Increase button text size */
+        font-size: 14px;
+        margin-left: 73px;
+        margin-top: 10px;
+        padding: 5px 10px;
+    }
+
+    .image-container {
+        flex-direction: row;
+        gap: 20px;
+    }
+
+    .anime-img {
+        width: 100%;
+        margin-right: 150px;
+        left: 200px;
+        max-width: 100%;
+    }
+
+    .image-row {
+        flex-direction: row;
+        align-items: center;
+    }
+
+    .image-row img {
+        width: auto;
+        margin: 0 10px;
+        max-width: 100%;
+    }
+
+    .back-button {
+        width: auto;
+        margin-top: 20px;
+    }
+
+    .sidebar {
+        width: 60px;
+    }
+
+    .content {
+        margin-left: 80px;
+    }
+
+    .chatbot {
+        width: 300px;
+        bottom: 20px;
+        right: 20px;
+        border-radius: 10px;
+    }
+
+    .chatbot-header {
+        border-radius: 10px;
     }
 }
+
