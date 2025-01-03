@@ -12,14 +12,3 @@ window.onload = function() {
     }
 };
 
-function submitAnswer() {
-    const userInput = document.getElementById('userInput').value;
-    if (userInput) {
-        alert(`Your answer: ${userInput}`);
-        document.querySelector('.chatbot').style.display = 'none';
-        
-        // Record the input from the chatbot
-        console.log(`Recorded answer: ${userInput}`);
-    }
-}
-
