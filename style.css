@@ -1,12 +1,9 @@
-html, body {
-    background-color: moz-linear-gradient(90deg, rgb(111, 114, 118) 0%, rgba(12, 12, 12, 0.7) 100%);
-}
-
 body {
     font-family: 'JetBrains Mono', monospace;
     color: bisque;
     opacity: 0.9;
     box-sizing: border-box;
+    background: linear-gradient(135deg, #8e44ad, #ff6b81); /* Purple-pink gradient */
 }
 
 
