@@ -3,10 +3,24 @@ body {
     color: bisque;
     opacity: 0.9;
     box-sizing: border-box;
-    background: linear-gradient(135deg, #8e44ad, #ff6b81); /* Purple-pink gradient */
+    background: linear-gradient(135deg, #6a58a5, #d28665); /* Purple-pink gradient 6a58a5 */
 }
 
+.back-button {
+    position: absolute;
+    top: 20px;
+    left: 20px;
+    padding: 10px 20px;
+    background-color: #28a745;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+}
 
+.back-button:hover {
+    background-color: #218838;
+}
 
 h1 {
     margin: 0;
@@ -53,7 +67,7 @@ img {
 }
 
 a {
-    color: rgb(113, 115, 188); /* Link color */
+    color: rgb(255, 142, 90); /* Link color */
 }
 
 .centered-container {
@@ -72,7 +86,7 @@ main {
 footer {
     text-align: center;
     padding: 10px;
-    background-color: #252627;
+    background-color: #6a58a5; /* Pastel pink */
     width: 100%;
     border-radius: 20px;
 }
@@ -83,7 +97,7 @@ footer {
     position: fixed;
     top: 0;
     left: 0;
-    background-color: #333;
+    background-color: #6a58a5; /* Pastel pink */
     padding-top: 20px;
 }
 
@@ -126,20 +140,6 @@ footer {
 
 .navbar {
     display: none;
-}
-
-.back-button {
-    margin-top: 20px;
-    padding: 10px 20px;
-    background-color: #28a745;
-    color: white;
-    border: none;
-    border-radius: 5px;
-    cursor: pointer;
-}
-
-.back-button:hover {
-    background-color: #218838;
 }
 
 /* Removed chatbot CSS */
